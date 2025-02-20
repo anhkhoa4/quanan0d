@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #60dd9f;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(118, 217, 235);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #508d34;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #5290ad;
+  color: rgb(66, 9, 9);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #aae6e3;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(188, 238, 247);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #c0db74;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>QUÁN ĂN THIỆN NGUYỆN</h1>
+  <p>HỖ TRỢ NHỮNG NGƯỜI KHÓ KHĂN.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">yêu thương</a>
+  <a href="#">gắn kết</a>
+  <a href="#">sẻ chia</a>
+  <a href="#" style="float:right">lan tỏa yêu thương</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Sơ lược về quán</h2>
+      <h5>quán thành lập với chủ trương giúp đỡ người khó khăn với món 0đ</h5>
+      
+        <img src="https://www.consulus.com/wp2/wp-content/uploads/2014/09/Consulus_QAN-34-PDP.jpg" width="500PX">
+
+    
+      <p>Một vài điều ý nghĩa</p>
+      <p>Đúng 11 giờ một ngày cuối tuần, quán cơm 0 đồng của gia đình ông Tuấn nằm trên đường Tân Hiệp 46 (H.Hóc Môn, TP.HCM) bắt đầu mở cửa. Hàng chục người đã chờ sẵn bên ngoài hối hả tiến vào bên trong, ngồi kín bàn chờ quán mang món ra thưởng thức. Ai nấy cũng vui vẻ trò chuyện rôm rả.</p>
+    </div>
+    <div class="card">
+      <h2>Menu quán</h2>
+      <h5>Giúp người là niềm vui</h5>
+     <img src="https://banghegiare.com.vn/data/news/3625/cac-mau-menu-quan-an-dep.jpg">
+      <p>Gồm các món cơm và nước</p>
+      <p>Thực đơn cơm văn phòng 1</p>
+       <p>Thứ 2: Sườn non chua ngọt, Canh tomyum chua cay, Gỏi sụn rong biển</p> 
+       <p>Thứ 3: Gà nướng mật ong, Canh rong biển thịt bằm, Giá hẹ xào</p> 
+       <p>Thứ 4: Cá kho tộ, Canh cải ngọt, Cải thìa xào tôm</p> 
+        <P>Thứ 5: Gà sốt tiêu đen, Canh bầu tôm khô, Rau củ luộc</P>
+       <p> Thứ 6: Đậu hũ nhồi thịt sốt cà, Canh bí xanh, Đậu que xào</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>CÂU CHUYỆN</h2>
+      <img src="https://blog.dktcdn.net/files/quan-an-chi-phi-thap.jpg" width="250PX">
+     
+     
+      <p>Quán cơm 0 đồng của chị Trần Hoàng Kim và chồng là anh Del Toro Garcia Nicolas Antonio (quốc tịch Mexico) cũng là địa chỉ mà nhiều bà con lao động nghèo thường tìm đến. Chị từng sống tại Malaysia hơn chục năm, lúc nào cũng chăm chỉ làm các công việc thiện nguyện. Đến năm 2019, khi trở về TP.HCM, chị lại tiếp tục đam mê giúp đỡ mọi người của mình bằng cách mở ra quán cơm "lấy nụ cười làm lãi".</p>
+    </div>
+    
+    <div class="card">
+      <h3>liên hệ</h3>
+      <p>Địa chỉ: 138 Nam Kì Khởi Nghĩa - Phường Bến Nghé - Quận 1 - TPHCM</p>
+      <p>Điện thoại: (028).38206666 - (028) 38.279.666 - (028) 38257179</p>
+
+       <p>Hotline: 090.626.7986</p>
+       <p>Website: http://quanngon138.com/</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>XIN CẢM ƠN</h2>
+</div>
+
+</body>
+</html>
